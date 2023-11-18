@@ -1,0 +1,177 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+  body{font-family:Georgia, 'Times New Roman', Times, serif}
+.navbar{height: 80px;
+    opacity: 0.7;}
+.text-info{border-right:1px solid #8a8989; 
+    padding-right: 15px;
+    font-weight:bold ;
+    transition: 0.5s;
+    font-size: 22px; 
+    /* عشان الالوان تبقا للكلمة */
+    background: -webkit-linear-gradient(#fcfbfa,#049b31,#131414, #d60505);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}  
+.oo{font-weight:bold ;
+    font-size: 29px; 
+  /* عشان الالوان تبقا للكلمة */
+   background: -webkit-linear-gradient(#d60505, #049b31 ,#d60505);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+.text-info:hover{text-shadow: 1px 1px 20px green;}
+.nav-item{font-weight: bold;}
+.nav-info:hover{text-shadow: 1px 1px 10px rgb(167, 51, 6);
+    transform: scale(1.1);}
+.form-inline{margin-left: auto;}  
+.dropdown-item{background-color: #ebf3ee0e;
+     color: #049b31;} 
+ /*//////////////////////////////////////////////////////////////////////////  */
+.carousel-inner{margin-top: 80px;}
+.carousel-caption{border-radius: 20px;
+     background-color: #8fcea2b7;}
+.aside-icons{width: 80px;
+    left: 20px;
+    z-index: 60;
+    top: 100px;
+    position: absolute;
+    position: fixed;}
+.aside-icons>a{font-size: 60px;
+    color: #225a39;}
+.aside-icons>a:hover{color:#3d885ca9;}
+.card{text-align: end;
+    background-color: #b5eec5;
+    border-radius: 12px;}
+.e{background-color: #295f39ea;
+    border-radius: 12px;}
+a{color: #346e3b;}
+a:hover{color: #729c84;}
+.b-copy{position: relative;}
+.copy{width:150px;
+    height: 40px;
+    border-radius: 17px 2px 17px 17px;
+    background-color: #88bb98;
+    padding: 4px;
+    position: absolute;
+    right: 7%;
+    visibility: hidden;} 
+.action:hover .copy{visibility: visible;}
+/* ////////////////// /////////////////////////////////////////*/
+.img-fix1 , .img-fix2{width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;}
+.img-fix1{ background-image: url(../img/الجامع_القبلي_من_الخارج.jpg);}
+.img-fix2{ background-image: url(../img/العودة_n.jpg);
+background-size: 100% 100%;}
+.word{ background-color: #b5eec5;
+   /* عشان الالوان تبقا للكلمة */
+   background: -webkit-linear-gradient(#fcfbfa,#049b31,#131414, #d60505);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;}
+   /* /////////////////////////////////////// */
+.cardpa{position: relative;
+  min-height: 400px;}
+.cardpa::before{position: absolute;
+    background-color:#beddc8;
+    content: "";
+    width: 0;
+    height:0;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    transition:1s;}
+.cardpa::after{position: absolute;
+    background-color:#beddc8;
+    content: "";
+    width: 0;
+    height:0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+    transition: 1s;}   
+.cardpa:hover::before{width: 100%;
+height: 100%;}
+.cardpa:hover::after{width: 100%;
+    height: 100%;}
+.cardpa .btn{position: absolute;
+    z-index:6;
+    bottom:110px;
+    left: 4%;}
+.cardpa img{height: 380px;}
+/* //////////////////////////// */
+.cardbg::after{position: absolute;
+    background-color:rgba(57, 58, 57, 0.575);
+    content: "";
+    left: 0;
+    top:0;
+    bottom: 0;
+    right: 0;}
+.cardbg:hover{transform: scale(0.9,0.9);
+    transition: 0.6s;}
+.cardbg:hover::after{ background: -webkit-linear-gradient(#069619, #585e5a );
+opacity: 0.5;}
+.cardbg:hover .card-body{transition: 0.5s;
+  padding-top: 30px;}
+  /* ///////////////////////////////////////////// */
+article{border-radius: 16px;
+box-shadow:  -5px -5px 16px 6px #044d14a2;
+background: linear-gradient(-80deg, rgba(8, 134, 71, 0.1), transparent 50%);
+position: relative;
+overflow: hidden;}
+article::after{content: "";
+width: 79px;
+background-color:rgb(230, 236, 233);
+position: absolute;
+height: 100%;
+left: 196px;
+transform: skew(-8deg);}
+.text h1{font-size: 30px;
+padding-bottom: 6px;}
+.text .line{width: 80px;
+height: 4px;
+border-radius: 4px;
+margin-left: auto;
+margin-top: 6px;
+margin-bottom: 6px;}
+article  .img-1 {border-radius: 16px 0px 0px 16px ;
+width: 230px;
+height: 100%;
+transition: 0.5s;
+}
+.text{padding: 2rem;
+ z-index: 8;
+text-align: end;
+flex-direction: column;}
+article ul{padding-top: 20px;
+list-style: none;
+margin-left:70%}
+article ul li{padding: 2px 7px;
+margin: 0 5px 5px 0;
+background-color: #bdbbbb;
+border-radius: 2px;
+}
+article:hover .line{width: 120px;
+transition: 0.5s;}
+article:hover .img-1{transform: scale(1.1 ,1.1);}
+article li:hover{background-color: rgb(164, 170, 166);}
+ .green:hover{background-color: rgb(85, 175, 138);}
+ .blue:hover{background-color: rgb(85, 127, 175);}
+ .red:hover{background-color: rgb(175, 85, 85);}
+ .yellow:hover{background-color: rgb(206, 198, 96);}
+ /* ////////////////////////////////////////////////////// */
+.social{width: 210px;
+ box-shadow: -5px -5px 16px 6px #a7b3ab;
+border-radius: 12px;
+padding: 10px;}
+.social .icon{ box-shadow:-5px -5px 16px 6px #b1d3ba ;}
+.icon:hover{transition: 0.7s;
+background-color:rgb(242, 247, 241);
+opacity: 0.7;}
+
+/* //////////////////////////////////// */
+footer img{ box-shadow:-5px -5px 16px 6px #adccb5 ;}
+
+
+
+

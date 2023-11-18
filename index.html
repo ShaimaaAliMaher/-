@@ -1,0 +1,568 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <title>boot strap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+  </head>
+  <body style="background-color: rgb(231, 236, 232);">
+    <nav class="navbar navbar-expand-md bg-light fixed-top navbar-light">
+        <!--//////////////////// Brand ///////////////////////-->
+      <img src="img/logo.jpg" class=" mx-3 " alt="Logo" style="width:80px;" height="80px">
+      <a class="navbar-brand text-info m-3" href="#" >فلسطين</a>
+        <!-- ///////////////////Toggler/collapsibe Button /////////////////////// -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+        <!-- ////////////////// Navbar links //////////// -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav me-auto ">
+          <li class="nav-item nav-info">
+            <a class="nav-link text-dark pr-3" href="#">الرئيسية</a>
+          </li>
+          <li class="nav-item nav-info">
+            <a class="nav-link text-dark pr-3" href="#">الرابط</a>
+          </li>
+          <li class="nav-item dropdown">
+            <button type="button" class="btn dropdown-toggle text-dark mx-2 border-2 border-success nav-info nav-item" data-toggle="dropdown">
+             الرحلات
+            </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#"">القدس</a>
+            <a class="dropdown-item" href="#">يافا</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">جنين</a>
+            <a class="dropdown-item" href="#">عكا</a>
+            <a class="dropdown-item" href="#">غزة</a>
+            <a class="dropdown-item" href="#">الرملة</a>
+            <a class="dropdown-item" href="#">المزيد</a>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark pr-3  disabled" href="#">حول</a>
+          </li>
+        </ul>  
+      <form class="form-inline " action="/action_page.php">
+        <input class="form-control mr-sm-2 border-2 border-success " type="search" placeholder="ابحث">
+        <button class="btn btn-success pr-3 mx-2 " type="submit">بحث</button>
+          <!--///////////////// Button to Open the Modal //////////////////-->
+        <button class="btn btn-success pr-3 mx-2 " data-toggle="modal" data-target="#myModal" type="button">دخول</button>
+            <!-- ///////////// The Modal //////////////////// -->
+       </form>
+   </div>
+</nav>
+    <!-- ///////////////////// The Modal ///////////////////////// -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- ///////////// Modal Header /////////////////////// -->
+       <div class="modal-header bg-secondary ">
+        <h4 class="modal-title  text-light shadow-lg">تسجيل دخول</h4>
+        <button type="button" class=" btn btn-close shadow-lg bg-secondary font-weight-bolder text-light" data-dismiss="modal" aria-label="Close" >&times;</button>
+      </div> 
+      <!--////////////// Modal body /////////////-->
+     <div class="modal-body">
+      <form action="/action_page.php">
+        <div class="form-group">
+          <label for="email">البريد الإلكتروني:</label>
+          <input type="email" class="form-control" placeholder="أدخل عنوان البريد" id="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">كلمة السر:</label>
+          <input type="password" class="form-control" placeholder="كلمة السر" id="pwd">
+        </div>
+        <form>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="m-3 custom-control-input" id="switch1" checked>
+            <label class="custom-control-label" for="switch1">تذكر البيانات</label>
+          </div>
+        </form>
+      </form>
+      <!-- Modal footer -->
+       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+        <button type="button" class="btn btn-secondary form-inline" data-dismiss="modal">تأكيد</button>
+      </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<!-- ////////////////carousel ///////////////////////////////////// -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1" class="active"></li>
+    <li data-target="#demo" data-slide-to="2" class="active"></li>
+    <li data-target="#demo" data-slide-to="3" class="active"></li>
+  </ul>
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/image1170x530cropped.jpg" alt="القدس" class="d-block w-100" style="height: 540px;">
+      <div class="carousel-caption">
+        <h1>مدينة القدس</h1>
+        <p>عاصمة فلسطين الحبيبة</p>
+        <a href="#" class="btn btn-success text-white text-shadow" target="_blank">زيارة</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/يافا.jpg" alt="يافا" class="d-block w-100" style="height: 540px;">
+      <div class="carousel-caption">
+        <h1>مدينة يافا</h1> 
+        <p>عروس البحر</p>
+        <a href="#" class="btn btn-success text-white text-shadow" target="_blank">زيارة</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/طبريا.jpg" alt="طبريا" class="d-block w-100" style="height: 540px;">
+      <div class="carousel-caption">
+        <h1>مدينة طبريا </h1>
+        <p>عروس الاغوار الفلسطينية</p>
+        <a href="#" class="btn btn-success text-white text-shadow" target="_blank">زيارة</a>
+      </div>
+    </div>
+      <div class="carousel-item">
+        <img src="img/حيفا.jpg" alt="حيفا" class="d-block w-100" style="height: 540px;">
+        <div class="carousel-caption">
+          <h1>مدينة حيفا</h1>
+          <p>عروس البحر في الشمال</p>
+          <a href="#" class="btn btn-success text-white text-shadow" target="_blank">زيارة</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+<div class="aside-icons">
+  <a href="#"><i class="fab fa-facebook-square" ></i></a>
+  <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+  <a href="#"><i class="fab fa-twitter-square"></i></a>
+  <a href="#"><i class="fab fa-linkedin"></i></a>
+  <a href="#"><i class="fab fa-instagram-square"></i></a>
+</div>
+<!-- ////////////////////////////////////// -->
+<div class="card">
+  <div class="card-body mx-3">
+    <h3 class="card-title oo">مرحبا</h3>
+    <p class="card-text font-weight-bolder">هل تخطط لزيارة فلسطين؟ نحن نقدم الجولة النهائية في فلسطين، والتي تغطي القدس، يافا. بدءًا من رحلة ليوم واحد وحتى إجازة الأحلام لمدة 10 أيام، سنهتم بجميع احتياجاتك. حجز الفنادق. خدمة العملاء 24/7. </p>
+    <a href="#" class="btn btn-light  btn-lg m-auto text-secondary font-weight-bolder">تفاصيل</a>
+  </div>
+</div>
+<hr>
+<div class="e p-4 text-center text-light">
+ <h1 class="text-light">الوجهات الشهيرة في فلسطين</h1>
+</div>
+<!-- /////////////////////////////////////////////// -->
+<div id="accordion">
+  <div class="card bg-light">
+    <div class="card-header">
+      <a class="collapsed card-link oo" data-toggle="collapse" href="#collapseThree">القدس</a>
+    </div>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <p class="card-body font-weight-bolder">
+     القُدْس، هي أكبر مدن فلسطين التاريخية المحتلّة مساحةً وسكانًا وأكثرها أهمية دينيًا واقتصاديًا. تُعرف بأسماء أخرى في اللغة العربية مثل: بيت المقدس، القدس الشريف، أولى القبلتين</p>
+    </div>
+  </div>
+  <div class="card-accordion">
+    <div class="card bg-light">
+      <div class="card-header">
+        <a class="collapsed card-link oo" data-toggle="collapse" href="#collapsetwo">
+           الرملة</a>
+      </div>
+      <div id="collapsetwo" class="collapse" data-parent="#accordion">
+        <p class="card-body font-weight-bolder">
+          الرملة من أكبر وأقدم مدن فلسطين. تقع اليوم في اللواء الأوسط على بعد 38 كم شمال غرب القدس. تأسست سنة 716م على يد الخليفة الأموي سليمان بن عبد الملك، وسميت نسبة إلى الرمال التي كانت تحيطها      </div>
+    </div>
+  </div>
+    <div class="card-accordion">
+      <div class="card bg-light">
+        <div class="card-header">
+          <a class="collapsed card-link oo" data-toggle="collapse" href="#collapseone">
+          غزة</a>
+        </div>
+        <div id="collapseone" class="collapse" data-parent="#accordion">
+          <p class="card-body font-weight-bolder">
+            تعد غزة اليوم مركزا اقتصاديا في المنطقة، وتزرع فيها الحمضيات وغيرها من المحاصيل، وتشتهر المدينة بالسجاد المنسوج يدويا، والأثاث المصنوع من الخيزران، وتتميز بصناعة الفخار. كما تشتهر بالمأكولات البحرية الطازجة، وفيها العديد من الحدائق العامة والمطاعم على طول الشاطئ، حيث يستطيع الزوار الاستمتاع بنسيم البحر الأبيض المتوسط.
+          </div>
+      </div>
+          <hr>
+        </div>
+</div>
+          <!-- /////////////////////////////////////////////////////////// -->
+ <div class="e p-2 text-center text-light">
+    <h1 class="text-light">(In English)<bdi>ترجمة إلى اللغة الإنجليزية:</bdi></h1>
+ </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">اكتب وترجم
+      <a href="https://translate.google.com.eg/?hl=en" class="card-link" target="_blank">اضغط هنا</a> </h4>
+
+      <div class="action">
+        <button type="button" class="btn b-copy btn-light text-success btn-lg font-weight-bolder">نسخ</button>
+        <div class="copy text-center font-weight-bolder  text-light">نسخ الى الحافظة</div> </div>
+        <br>
+      <div class="form-group">
+        <textarea class="form-control text-right" rows="5" id="comment" placeholder="ترجم"></textarea>
+      </div>
+    </div>
+ </div>
+ <hr>
+<div class="e p-2 text-center text-light">
+   <h1 class="text-light">(In Franch)<bdi>ترجمة إلى اللغة الفرنسية:</bdi></h1>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">اكتب وترجم
+    <a href="https://translate.google.com.eg/?hl=en" class="card-link" target="_blank">اضغط هنا</a> </h4>
+    <div  class="action"> <button type="button" class="btn b-copy btn-light text-success btn-lg font-weight-bolder">نسخ</button>
+      <div class="copy text-center font-weight-bolder  text-light">نسخ الى الحافظة</div> </div>
+      <br>
+    <div class="form-group">
+       <textarea class="form-control text-right" rows="5" id="comment" placeholder="ترجم"></textarea>
+      </div>
+   </div>
+</div>
+<hr>
+<div class="e p-2 text-center text-light">
+     <h1 class="text-light">(In German)<bdi>ترجمة إلى اللغة الأمانية:</bdi></h1>
+</div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">اكتب وترجم 
+      <a href="https://translate.google.com.eg/?hl=en" class="card-link" target="_blank">اضغط هنا</a> </h4>
+      <div class="action"> <button type="button" class="btn b-copy btn-light text-success btn-lg font-weight-bolder">نسخ</button>
+      <div class="copy text-center font-weight-bolder  text-light">نسخ الى الحافظة</div> </div>
+      <br>
+      <div class="form-group">
+       <textarea class="form-control text-right" rows="5" id="comment" placeholder="ترجم"></textarea>
+    </div>
+   </div>
+ </div>
+<hr>
+ <!-- ////////////////////////////////// -->
+ <div class="img-fix1"></div>
+ <!-- /////////////////// -->
+ <div class="e p-2 text-center text-light" style= "background-color: #b5eec5;">
+  <h1 class="text-light word p-2">الوجهات الشهيرة في فلسطين</h1>
+</div>
+<!-- ///////////////////////////// -->
+<div class="container-fluid">
+  <div class="row justify-content-around pb-5 ">
+    <div class="card cardpa bg-light col-lg-3 col-md-4 col-sm-6 col-6 mt-5 m-1 shadow">
+      <img class="card-img-top w-100 shadow" src="img/حائط البراق.jpg" alt="حائط البراق">
+      <div class="card-body">
+        <h5 class="card-title">حائط البراق</h5>
+        <p class="card-text">
+           وهو الحائط الذي ربط النبي صلى الله عليه وسلم البراق ليلة الإسراء والمعراج بجواره </p>
+        <button class="btn btn-success text-light d-block">اعرف المزيد</button>
+      </div>
+    </div>
+    <div class="card cardpa bg-light col-lg-3 col-md-4 col-sm-6 col-6 mt-5 m-1 shadow">
+      <img class="card-img-top w-100 shadow" src="img/الجامع القبلي.jpg" alt="المسجد القبلي">
+      <div class="card-body">
+        <h5 class="card-title">المسجد القبلي</h5>
+        <p class="card-text"> جزء من المسجد الأقص وهو المصلى الرئيس الذي يقف فيه خطيب الجمعة، وفيه المحراب والمنبر</p>
+        <button class="btn btn-success text-light d-block">اعرف المزيد</button>
+      </div>
+    </div>
+    <div class="card cardpa bg-light col-lg-3 col-md-4 col-sm-6 col-6 mt-5 m-1 shadow">
+      <img class="card-img-top w-100 shadow" src="img/قبة الصخرة.jpg" alt="قبة الصخرة">
+      <div class="card-body">
+        <h5 class="card-title">مسجد قبة الصخرة</h5>
+        <p class="card-text">القبة التي عرج منها رسول الله -صلَّى الله عليه وسلَّم- إلى السماء العليا في ليلة الإسراء والمعراج</p>
+        <button class="btn btn-success text-light d-block">اعرف المزيد</button>
+      </div>
+    </div>
+    <div class="card cardpa bg-light col-lg-3 col-md-4 col-sm-6 col-6 mt-5 m-1 shadow">
+      <img class="card-img-top w-100 shadow" src="img/مسجد عمر بن الخطاب.jpeg" alt="مسجد عمر بن الخطاب">
+      <div class="card-body">
+        <h5 class="card-title">مسجد عمر بن الخطاب</h5>
+        <p class="card-text"> وهوأقيم على المكان الذي صلى فيه الخليفة عمر بن الخطاب رضي الله تعالى عنه عندما فتح القدس </p>
+        <button class="btn btn-success text-light d-block">اعرف المزيد</button>
+      </div>
+    </div>
+    <div class="card cardpa bg-light col-lg-3 col-md-4 col-sm-6 col-6 mt-5 m-1 shadow">
+      <img class="card-img-top w-100 shadow" src="img/المسجد الابراهيمي.jpg" alt="المسجدالابراهيمي">
+      <div class="card-body">
+        <h5 class="card-title">المسجد الابراهيمي </h5>
+        <p class="card-text">تشير الدراسات التاريخية إلى أنَّ المسجد بُني قبل أربعة آلاف عام على يد سيدنا إبراهيم (عليه السلام)</p>
+        <button class="btn btn-success text-light d-block">اعرف المزيد</button>
+      </div>
+    </div>
+    <div class="card cardpa bg-light col-lg-3 col-md-4 col-sm-6 col-6 mt-5 m-1 shadow">
+      <img class="card-img-top w-100 shadow" src="img/برج الرملةjpg.jpg" alt="برج الرملة">
+      <div class="card-body">
+        <h5 class="card-title">برج الرملة</h5>
+        <p class="card-text"> <br>
+          يمكن الصّعود إلى قمّته للتّمتّع بمنظر مدينة الرّملة، وذلك بواسطة 119 درجة.</p>
+        <button class="btn btn-success text-light d-block">اعرف المزيد</button>
+      </div>
+    </div>
+    <div class="card cardpa bg-light col-lg-3 col-md-4 col-sm-6 col-6 mt-5 m-1 shadow">
+      <img class="card-img-top w-100 shadow" src="img/ميناء يافا.jpg" alt="ميناءيافا">
+      <div class="card-body">
+        <h5 class="card-title">ميناء يافا</h5>
+        <p class="card-text"> يقع على الشاطئ الشرقي للبحر المتوسط وتتوالى السفن وقوارب الصيد المحلية إلى الميناء بشكل يومي </p>
+        <button class="btn btn-success text-light d-block">اعرف المزيد</button>
+      </div>
+    </div>
+    <div class="card cardpa bg-light col-lg-3 col-md-4 col-sm-6 col-6 mt-5 m-1 shadow">
+      <img class="card-img-top w-100 shadow" src="img/مسجد السيد هاشم (2).jpg" alt="مسجد السيد هاشم">
+      <div class="card-body">
+        <h5 class="card-title">مسجدالسيد هاشم</h5>
+        <p class="card-text"> <br>
+          يقع بحي الدرج "مدينة غزة القديمة"، ويعد من أجمل جوامع غزة الأثرية وأكبرها</p>
+        <button class="btn btn-success text-light d-block">اعرف المزيد</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //////////////////////////////// -->
+<div class="img-fix2"></div>
+<!-- //////////////////////// -->
+<hr class="my-4">
+<div class="e p-3 text-center text-light" style= "background-color: #b5eec5;">
+  <h1 class="text-light word p-2">شكرا لكم</h1>
+</div>
+<div class="container" style="min-height: 500px; ">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12 my-4 ">
+      <div class="card text-white cardbg shadow" style="background-image: url(img/صلاحالدين.jpg);" >
+        <img class="card-img" src="img/صلاحالدين.jpg" alt="Card image" style="border-radius: 20px;">
+        <div class="card-img-overlay d-flex flex-column" style="z-index: 4;">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a class="text-white" href="#" style="text-decoration: none;">كل الشكر والتقدير</a>
+            </h4>
+            <small>
+              <i class="far fa-clock" style="color: #b7b7b8;"></i>
+              July 4, 1187
+            </small>
+          </div>
+          <div class="card-footer">
+            <img src="img/صلاحالدين.jpg" class="rounded-circle mr-3" style="width: 100px;">
+            <h6>القائد صلاح الدين الأيوبي</h6>
+            <span>محرر الأقصى</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 my-4"">
+      <div class="card text-white cardbg shadow" style="background-image: url(img/ابو\ عبيدة.jpg); height: 100%; background-position: center center;" >
+        <img class="card-img"style="border-radius: 20px;">
+        <div class="card-img-overlay d-flex flex-column" style="z-index: 4;">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a class="text-white" href="#" style="text-decoration: none;">كل الشكر والتقدير</a>
+            </h4>
+            <small>
+              <i class="far fa-clock" style="color: #b7b7b8;"></i>
+              oct 7, 2023
+            </small>
+          </div>
+          <div class="card-footer">
+            <img src="img/ابو عبيدة.jpg" class="rounded-circle mr-3" style="width: 100px; height: 126px;">
+            <h6>القائد ابو عبيدة</h6>
+            <span>متحدث كتائب القسام</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 my-4">
+      <div class="card text-white cardbg shadow" style="background-image: url(img/شعب.jpg); height: 100%; background-position: center center;"" >
+        <img class="card-img"  style="border-radius: 20px;">
+        <div class="card-img-overlay d-flex flex-column" style="z-index: 4;">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a class="text-white" href="#" style="text-decoration: none;">كل الشكر والتقدير</a>
+            </h4>
+            <small>
+              <i class="far fa-clock" style="color: #b7b7b8;"></i>
+              every-time
+            </small>
+          </div>
+          <div class="card-footer">
+            <img src="img/شعب.jpg" class="rounded-circle mr-3" style="width: 100px; height: 126px;">
+            <h6>الشعب الفلسطيني</h6>
+            <span>الشعب العظيم</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="my-6">
+<div class="container">
+  <div> <h1 class="word" style="text-align: center; font-size: 30px;">أخبار فلسطين </h1></div>
+  <article class="d-flex shadow my-4">
+   <a href="#" class="art-img"> <img src="img/WhatsApp Image 2023-11-16 at 6.30.19 PM.jpeg" class="img-1" ></a> 
+    <div class="text">
+      <h1> <a href="#" style="text-decoration: none;">المسلمون أحق الناس بوراثة القدس</a></h1>
+      <div class="time">
+        <i class="far fa-calendar-alt" style="color: #60646c;"></i>
+        friday &nbsp; January 18, 2002
+      </div>
+      <div class="line" style="background-color: rgb(69, 134, 90);"></div>
+      <div class="news">قوله تعالى: إِنَّ الْأَرْضَ لِلَّهِ يُورِثُهَا مَنْ يَشَاءُ مِنْ عِبَادِهِ وَالْعَاقِبَةُ لِلْمُتَّقِينَ {الأعراف:128}، فالقدس، وكل الأرض، ملك لله جل وعلا، والمسلمون أحق الناس بوراثة هذه الأرض؛ لأن الإسلام هو الدِّين الذي لا يقبل الله غيره، ويجب على كل الأرض أن تدين به، قال الله تعالى: وَمَنْ يَبْتَغِ غَيْرَ الْإِسْلامِ دِيناً فَلَنْ يُقْبَلَ مِنْهُ وَهُوَ فِي الْآخِرَةِ مِنَ الْخَاسِرِينَ [آل عمران:85].
+        وهو دين للناس كافة، قال تعالى: وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِلْعَالَمِينَ [الأنبياء:107]، وقال سبحانه: قُلْ يَا أَيُّهَا النَّاسُ إِنِّي رَسُولُ اللَّهِ إِلَيْكُمْ جَمِيعًا... [الأعراف:158]، وقال سبحانه: وَمَا أَرْسَلْنَاكَ إِلَّا كَافَّةً لِلنَّاسِ... [سـبأ:28]]، .
+        فالواجب على المسلمين هو: بذل الوسع في أن يكون أهل الأرض خاضعين لحكم الله تعالى، وقد كان رسول الله صلى الله عليه وسلم يرسل الجيوش ليدعوا الناس إلى الإسلام، فيعرضونه عليهم، فإن أبوا، عرضوا عليهم الجزية، فإن أبوا، قاتلوهم حتى لا تكون فتنة، ويكون الدين كله لله.
+      </div>
+      <ul class="d-flex">
+        <li><i class="fas fa-tag" style="color: #60646c;"></i>بودكاست</li>
+        <li><i class="far fa-clock" style="color: #60646c;"></i>55 د</li>
+        <li class="green"> <i class="fas fa-play" style="color: #60646c;"></i> <a href="https://www.islamweb.net/ar/fatwa/13679/%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%D9%88%D9%86-%D8%A3%D8%AD%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B3-%D8%A8%D9%88%D8%B1%D8%A7%D8%AB%D8%A9-%D8%A7%D9%84%D9%82%D8%AF%D8%B3" target="_blank">انتقال</a></li>
+      </ul>
+    </div>
+  </article>
+  <article class="d-flex shadow my-4" style="background: linear-gradient(-80deg, rgba(134, 8, 8, 0.1), transparent 50%);">
+    <a href="#" class="art-img"> <img src="img/WhatsApp Image 2023-11-16 at 6.32.37 PM.jpeg" class="img-1" ></a> 
+     <div class="text">
+       <h1> <a href="#" style="text-decoration: none;">فضائل المسجد الاقصى المبارك</a></h1>
+       <div class="time">
+         <i class="far fa-calendar-alt" style="color: #60646c;"></i>
+         friday &nbsp; july 6, 2017
+       </div>
+       <div class="line" style="background-color: rgb(175, 85, 85);"></div>
+       <div class="news">عن أبي هريرة - رضي الله عنه – قال: قَالَ رَسُولُ اللَّهِ: ((لَقَدْ رَأَيْتُنِي فِي الْحِجْرِ وَقُرَيْشٌ تَسْأَلُنِي عَنْ مَسْرَايَ فَسَأَلَتْنِي عَنْ أَشْيَاءَ مِنْ بَيْتِ الْمَقْدِسِ لَمْ أُثْبِتْهَا فَكُرِبْتُ كُرْبَةً مَا كُرِبْتُ مِثْلَهُ قَطُّ، قَالَ فَرَفَعَهُ اللَّهُ لِي أَنْظُرُ إِلَيْهِ، مَا يَسْأَلُونِي عَنْ شَيْءٍ إِلاَّ أَنْبَأْتُهُمْ بِهِ، وَقَدْ رَأَيْتُنِي فِي جَمَاعَةٍ مِنَ الأَنْبِيَاءِ؛ فَإِذَا مُوسَى قَائِمٌ يُصَلِّي، فَإِذَا رَجُلٌ ضَرْبٌ جَعْدٌ كَأَنَّهُ مِنْ رِجَالِ شَنُوءَةَ، وَإِذَا عِيسَى ابْنُ مَرْيَمَ - عليه السلام - قَائِمٌ يُصَلِّي أَقْرَبُ النَّاسِ بِهِ شَبَهًا عُرْوَةُ بْنُ مَسْعُودٍ الثَّقَفِيُّ، وَإِذَا إِبْرَاهِيمُ - عليه السلام - قَائِمٌ يُصَلِّي أَشْبَهُ النَّاسِ بِهِ صَاحِبُكُمْ يَعْنِي نَفْسَهُ، فَحَانَتِ الصَّلاَةُ فَأَمَمْتُهُمْ، فَلَمَّا فَرَغْتُ مِنَ الصَّلاَةِ قَالَ قَائِلٌ يَا مُحَمَّدُ هَذَا مَالِكٌ صَاحِبُ النَّارِ فَسَلِّمْ عَلَيْهِ فَالْتَفَتُّ إِلَيْهِ فَبَدَأَنِي بِالسَّلاَمِ)) (صحيح مسلم).
+
+       </div>
+       <ul class="d-flex">
+         <li><i class="fas fa-tag" style="color: #60646c;"></i>بودكاست</li>
+         <li><i class="far fa-clock" style="color: #60646c;"></i>55 د</li>
+         <li class="red"> <i class="fas fa-play" style="color: #60646c;"></i> <a href="https://www.islamweb.net/ar/article/217738/%D9%81%D8%B6%D8%A7%D8%A6%D9%84-%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D8%AF-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%83" target="_blank">انتقال</a></li>
+       </ul>
+     </div>
+   </article>
+   <article class="d-flex shadow my-4" style="background: linear-gradient(-80deg, rgba(8, 10, 134, 0.1), transparent 50%);">
+    <a href="#" class="art-img"> <img src="img/WhatsApp Image 2023-11-16 at 6.32.38 PM.jpeg" class="img-1" ></a> 
+     <div class="text">
+       <h1> <a href="#" style="text-decoration: none;" >فضل القدس وبلاد الشام</a></h1>
+       <div class="time">
+         <i class="far fa-calendar-alt" style="color: #60646c;"></i>
+        thursday &nbsp; January 16, 2007
+       </div>
+       <div class="line" style="background-color: rgb(69, 90, 134);"></div>
+       <div class="news">فقد ثبت للقدس ولبلاد الشام عموما خير كثير وبركة. فقد جاء في كتاب الله تعالى في سورة الإسراء: سبحان الذي أسرى بعبده ليلا من المسجد الحرام إلى المسجد الأقصى الذي باركنا حوله. وقال سبحانه: وَنَجَّيْنَاهُ وَلُوطًا إِلَى الأَرْضِ الَّتِي بَارَكْنَا فِيهَا لِلْعَالَمِينَ {الأنبياء:71} ، قال الحسن: إن الأرض التي باركنا فيها: [الشام]
+        وقال الشيخ السعدي – رحمه الله – أي الشام ... ومن بركة الشام أن كثيراً من الأنبياء كانوا فيها، وأن الله اختارها، مهاجرا لخليله، وفيها أحد بيوته الثلاثة المقدسة وهو بيت المقدس.
+        وجاء في الصحيح من كتب السنة أحاديث كثيرة في فضل بلاد الشام أذكر منها ما جاء عن معاوية بن حيدة – رضي الله عنه – قال: إن النبي صلى الله عليه وسلم قال: عليكم بالشام. وقوله صلى الله عليه وسلم: إن الله عز وجل قد تكفل لي بالشام وأهله. وعنه صلى الله عليه وسلم: ألا إن الإيمان إذا وقعت الفتن بالشام. وحديث أبي ذر رضي الله عنه قال: قال رسول الله صلى الله عليه وسلم: الشام أرض المحشر والمنشر. ووصى النبي صلى الله عليه وسلم بسكنى الشام: عليك بالشام فإنها خيرة الله في أرضه، يجتبي إليها خيرته من عباده. رواه أبو داود وأحمد، بسند صحيح.
+       </div>
+       <ul class="d-flex">
+         <li><i class="fas fa-tag" style="color: #60646c;"></i>بودكاست</li>
+         <li><i class="far fa-clock" style="color: #60646c;"></i>55 د</li>
+         <li class="blue"> <i class="fas fa-play" style="color: #60646c;"></i> <a href="https://www.islamweb.net/ar/fatwa/80221/%D9%81%D8%B6%D9%84-%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D9%88%D8%A8%D9%84%D8%A7%D8%AF-%D8%A7%D9%84%D8%B4%D8%A7%D9%85" target="_blank">انتقال</a></li>
+       </ul>
+     </div>
+   </article>
+  </article>
+  <article class="d-flex shadow my-4" style="background: linear-gradient(-80deg, rgba(159, 161, 13, 0.1), transparent 50%);">
+   <a href="#" class="art-img1"> <img src="img/WhatsApp Image 2023-11-16 at 6.19.00 PM.jpeg" class="img-1" ></a> 
+    <div class="text">
+      <h1> <a href="#" style="text-decoration: none;" >لك الله يا قدس</a></h1>
+      <div class="time">
+        <i class="far fa-calendar-alt" style="color: #60646c;"></i>
+       thursday &nbsp; January 16, 2007
+      </div>
+      <div class="line" style="background-color: rgb(206, 198, 96);""></div>
+      <div class="news">لنَّفْسُ بِالنَّفْسِ شَرْعُ الذِّكْرِ نَتْلُوهُ.. ... ..والحَقّ دَيْنٌ عَلى الأَحْرَارِ فَاقْضُوهُ
+      <br>
+لا تُدْبِروا مِنْ عــــَدُوٍّ دَاسَ مَوطِنَنَا.. ... ..هَيَّا إِلى سَاحَةِ الهَيْجـــَاءِ فَارْمُوهُ
+<br>
+هُمُ الْيَهُــودُ مَدى الأَزْمَانِ لَعَنْتُهُمُ.. ... ..عَاثُوا فَسَــادًا وَعَهــْدُ اللهِ خَــانُوهُ
+<br>
+انْظُرْ إِلى عَهْدِهُمُ لِلْمُصْطَفَى نَقَضُوا.. ..وقــادَهُمُ مَكْــرُ شَيْطَــانٍ أَطَاعُوهُ
+مــَـاذا يُقــالُ عَنِ التَّوْحِــيدِ رَايَتِنَا؟.. ... ..غَيْـــظٌ يُخَالِطْهُمُ فَالْــغَيُّ يَأْتُـــوهُ
+شعر: زكريا عبد المحسن</div>
+      <ul class="d-flex">
+        <li><i class="fas fa-tag" style="color: #60646c;"></i>بودكاست</li>
+        <li><i class="far fa-clock" style="color: #60646c;"></i>55 د</li>
+        <li class="غثممخص"> <i class="fas fa-play" style="color: #60646c;"></i> <a href="https://www.islamweb.net/ar/fatwa/80221/%D9%81%D8%B6%D9%84-%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D9%88%D8%A8%D9%84%D8%A7%D8%AF-%D8%A7%D9%84%D8%B4%D8%A7%D9%85" target="_blank">انتقال</a></li>
+      </ul>
+    </div>
+  </article>
+    
+</div>
+<!-- ///////////////////////////////////// -->
+ <h1 class="word text-center" style="font-size: 30px;">تابعنا</h1>
+ <div class="container-fluid row justify-content-center">
+  <div class="text-center text-dark bg-light social m-3">
+    <h4>اشترك الان</h4>
+    <input type="image" src="img/twetter.jpg"  style="border-radius: 14px; width: 60px; margin: 18px;"  class="icon">
+  <h5><a href="#" style="text-decoration: none;">الرابط</a></h5>
+  </div>
+  <div class="text-center text-dark bg-light social m-3">
+    <h4> متابعة</h4>
+    <input type="image" src="img/whats.jpg"  style="border-radius: 14px; width: 60px; margin: 18px;"  class="icon">
+  <h5><a href="#" style="text-decoration: none;">الرابط</a></h5>
+  </div>
+  <div class="text-center text-dark bg-light social m-3">
+    <h4>اعجاب </h4>
+    <input type="image" src="img/in.jpg"  style="border-radius: 14px; width: 60px; margin: 18px;"  class="icon">
+  <h5><a href="#" style="text-decoration: none;">الرابط</a></h5>
+  </div>
+  <div class="text-center text-dark bg-light social m-3">
+    <h4> شاهد الفيديو</h4>
+    <input type="image" src="img/insta.jpg"  style="border-radius: 14px; width: 60px; margin: 18px;"  class="icon">
+  <h5><a href="#" style="text-decoration: none;">الرابط</a></h5>
+  </div>
+ </div>
+ <!-- //////////////////////////////////////////////////////////// -->
+ <footer>
+  <div class="row justify-content-center text-light" style="background-color: #93b39c;">
+      <div class="col-md-3 m-3 text-center text-light">
+        <hr class=" border-light m-3">
+       <h5><img src="img/logo.jpg" class="rounded-circle" style="width: 70px; ">&nbsp;شركة جيدة </h5>
+        <hr class="border-light m-3">
+        <div>
+          <p>الهاتف : 000-000-000</p>
+          <p>العنوان : مصر</p>
+          <p>فاكس : 000-000-000</p>
+        </div>
+      </div>
+      <div class="col-md-3 m-3 text-center text-light">
+        <hr class=" border-light m-3">
+       <h5><img src="img/logo.jpg" class="rounded-circle" style="width: 70px; ">&nbsp; روابط مهمة </h5>
+        <hr class="border-light m-3">
+        <div>
+          <p>زورونا</p>
+          <p>الق نظرة</p>
+          <p> صحتك اكثر أهمية</p>
+        </div>
+      </div>
+      <div class="col-md-3 m-3 text-center text-light">
+        <hr class=" border-light m-3">
+       <h5><img src="img/logo.jpg" class="rounded-circle" style="width: 70px; ">&nbsp;رؤية</h5>
+        <hr class="border-light m-3">
+        <div>
+          <p>الخدمات للجميع</p>
+          <p>تقديم افضل الخدمات</p>
+          <p>سوف تكون افضل من ذي قبل</p>
+        </div>
+      </div>
+ <div class="container-fluid text-center">
+      <hr class=" border-light m-3">
+      <h3 style="color: rgb(13, 61, 24);">    2023&copy;حقوق النشر والطبع محفوظة </h3>
+      <hr class=" border-light m-3">
+    </div>
+
+  </div>
+ </footer>
+
+ 
+
+
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
